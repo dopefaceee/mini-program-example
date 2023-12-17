@@ -1,0 +1,8 @@
+<view class="container">
+    <text>Overlay + State</text>
+    <text>State: {{state}}</text>
+    <button bindtap="showPopUp">Open Modal</button>
+    <button bindtap="showAction">Open Action</button>
+    <button bindtap="showLoading">Open Loading</button>
+    <button bindtap="showToast">Open Toast</button>
+</view>

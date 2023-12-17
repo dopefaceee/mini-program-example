@@ -1,6 +1,9 @@
 {
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/http/http",
+        "pages/overlay/overlay"
+
     ],
     "window": {
         "backgroundTextStyle": "light",

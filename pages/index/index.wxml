@@ -1,3 +1,7 @@
-<view>
-  Hello World
+<view class="container">
+  <text style="padding-bottom: 20rpx">Cheatsheet</text>
+  <button type="primary" bindtap="toOverlay">Overlay + State</button>
+  <button type="primary">HTTP</button>
+  <button type="primary">Form Binding</button>
+  <button type="primary">Asset Load</button>
 </view>

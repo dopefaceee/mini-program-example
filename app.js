@@ -19,39 +19,38 @@ qapmInit();
 
 //app.js
 App({
-  onLaunch: function () {
-    wx.setTabBarItem({
-  index: 0,
-  text: 'text',
- 
-})
-    // show localstorage
-    let logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // login
-    wx.login({
-      success: res => {
-        // get custom login info res
-      }
-    })
-    // get user settings
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // Already authorized, you can directly call getUserInfo to get the avatar nickname without popping up
-          wx.getUserInfo({
-            success: res => {
-              // get custom user info res
-              this.globalData.userInfo = res.userInfo;
-            }
-          })
-        }
-      }
-    })
+  onLaunch (options) {
+    // Do something initial when launch.
   },
-  globalData: {
-    userInfo: null
-  }
+  onShow: function() {
+    // From the something when page show.
+  },
+  onReady: function() {
+    // From the something when page ready.
+  },
+  onHide: function() {
+    // From the something when page hide.
+  },
+  onUnload: function() {
+    // From the something when page close.
+  },
+  onPullDownRefresh: function() {
+    // From the something when pull down.
+  },
+  onReachBottom: function() {
+    // From the something when page reach bottom.
+  },
+  onShareAppMessage: function () {
+    // return custom share data when user share.
+  },
+  onPageScroll: function() {
+    // From the something when page scroll
+  },
+  onResize: function() {
+    // From the something when page resize
+  },
+  onError (msg) {
+    console.log(msg)
+  },
+  globalData: 'I am global data'
 })

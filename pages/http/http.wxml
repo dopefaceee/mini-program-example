@@ -1,0 +1,9 @@
+<view class="container">
+    <text style="padding-bottom: 20rpx">HTTP</text>
+    <button bindtap="getListDummy">Get Data</button>
+    <view wx:for="{{data.list}}" wx:for-index="idx" wx:for-item="item" class="product">
+        <text>Title: {{item.title}}</text>
+        <text>Desc: {{item.description}}</text>
+        <text>Price: ${{item.price}}</text>
+    </view>
+</view>

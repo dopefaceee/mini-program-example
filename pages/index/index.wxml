@@ -1,12 +1,8 @@
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> getUserInfo </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <text style="padding-bottom: 20rpx">Cheatsheet</text>
+  <text style="padding-bottom: 20rpx">{{date}}</text>
+  <button type="primary" bindtap="toOverlay">Overlay + State</button>
+  <button type="primary" bindtap="toHttp">HTTP</button>
+  <button type="primary">Form Binding</button>
+  <button type="primary">Asset Load</button>
 </view>

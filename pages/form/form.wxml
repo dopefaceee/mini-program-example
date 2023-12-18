@@ -1,0 +1,14 @@
+<view class="container">
+    <text style="padding-bottom: 20rpx">Form</text>
+    <view class="form-input">
+        <input class="input-index" bindinput="bindIndex" maxlength="3" confirm-type="send" type="number" auto-focus placeholder="Masukkan index" />
+    </view>
+    <view class="button-form">
+        <button type="primary" data-index="{{inputValue}}" bindtap="getListDummy">Submit</button>
+    </view>
+    <view wx:for="{{data.list}}" wx:for-index="idx" wx:for-item="item" class="product">
+        <text>Title: {{item.title}}</text>
+        <text>Desc: {{item.description}}</text>
+        <text>Price: ${{item.price}}</text>
+    </view>
+</view>

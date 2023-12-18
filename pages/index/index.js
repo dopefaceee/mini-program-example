@@ -26,5 +26,13 @@ Page({
         console.log("to http")
       }
     })
-  }
+  },
+  toForm: function (event) {
+    wx.navigateTo({
+      url: '/pages/form/form',
+      success: function(res) {
+        console.log("to form")
+      }
+    })
+  },
 });

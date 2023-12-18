@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.form-input {
+    width: 100%;
+    margin-top: 20rpx;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-top: 20rpx;
+}
+
+.form-input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.product {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+}

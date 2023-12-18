@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.container button {
+    width: 100%;
+    margin-top: 20rpx;
+}
+
+.product {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+}

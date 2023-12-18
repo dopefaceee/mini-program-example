@@ -22,11 +22,32 @@ App({
   onLaunch (options) {
     // Do something initial when launch.
   },
-  onShow (options) {
-    // Do something when show.
+  onShow: function() {
+    // From the something when page show.
   },
-  onHide () {
-    // Do something when hide.
+  onReady: function() {
+    // From the something when page ready.
+  },
+  onHide: function() {
+    // From the something when page hide.
+  },
+  onUnload: function() {
+    // From the something when page close.
+  },
+  onPullDownRefresh: function() {
+    // From the something when pull down.
+  },
+  onReachBottom: function() {
+    // From the something when page reach bottom.
+  },
+  onShareAppMessage: function () {
+    // return custom share data when user share.
+  },
+  onPageScroll: function() {
+    // From the something when page scroll
+  },
+  onResize: function() {
+    // From the something when page resize
   },
   onError (msg) {
     console.log(msg)

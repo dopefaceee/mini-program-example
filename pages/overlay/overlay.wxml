@@ -1,5 +1,5 @@
 <view class="container">
-    <text>Overlay + State</text>
+    <text style="padding-bottom: 20rpx">Overlay + State</text> 
     <text>State: {{state}}</text>
     <button bindtap="showPopUp">Open Modal</button>
     <button bindtap="showAction">Open Action</button>

@@ -1,0 +1,5 @@
+<view class="container">
+    <button type="primary" bindtap="loadFont">Load Font</button>
+    <text>Sopia Font</text>
+    <image style="width: 80px; height: 80px;" mode="aspectFill" src="/images/notif.png"></image>
+</view>

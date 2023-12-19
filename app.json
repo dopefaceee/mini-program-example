@@ -2,8 +2,9 @@
     "pages": [
         "pages/index/index",
         "pages/http/http",
-        "pages/overlay/overlay"
-
+        "pages/overlay/overlay",
+        "pages/form/form",
+        "pages/asset/asset"
     ],
     "window": {
         "backgroundTextStyle": "light",

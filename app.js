@@ -21,6 +21,7 @@ qapmInit();
 App({
   onLaunch (options) {
     // Do something initial when launch.
+  
   },
   onShow: function() {
     // From the something when page show.

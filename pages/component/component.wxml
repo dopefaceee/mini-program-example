@@ -1,2 +1,4 @@
 <view class="container">
+    <t-input label="Rupiah" placeholder="Masukkan harga" maxlength="{{10}}" />
+<t-button theme="primary" size="large">Input</t-button>
 </view>

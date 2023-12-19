@@ -51,4 +51,12 @@ Page({
       },
     });
   },
+  toReusable: function (event) {
+    wx.navigateTo({
+      url: "/pages/reusable/reusable",
+      success: function (res) {
+        console.log("to reusable");
+      },
+    });
+  },
 });

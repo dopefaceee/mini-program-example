@@ -5,7 +5,8 @@
         "pages/overlay/overlay",
         "pages/form/form",
         "pages/asset/asset",
-        "pages/component/component"
+        "pages/component/component",
+        "pages/reusable/reusable"
     ],
     "window": {
         "backgroundTextStyle": "light",

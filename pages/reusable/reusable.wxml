@@ -1,0 +1,5 @@
+<view class="container">
+    <bri-input value1="WOW">
+        <view>This is inserted in the slot component</view>
+    </bri-input>
+</view>

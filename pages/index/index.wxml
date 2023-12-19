@@ -5,5 +5,6 @@
   <button type="primary" bindtap="toHttp">HTTP</button>
   <button type="primary" bindtap="toForm">Form Binding</button>
   <button type="primary"bindtap="toAsset">Asset Load</button>
-  <button type="primary"bindtap="toComponent">Components</button>
+  <button type="primary"bindtap="toComponent">TDesign Components</button>
+  <button type="primary"bindtap="toReusable">Reusable Components</button>
 </view>

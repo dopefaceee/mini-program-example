@@ -43,4 +43,12 @@ Page({
       },
     });
   },
+  toComponent: function (event) {
+    wx.navigateTo({
+      url: "/pages/component/component",
+      success: function (res) {
+        console.log("to component");
+      },
+    });
+  },
 });

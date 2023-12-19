@@ -4,7 +4,8 @@
         "pages/http/http",
         "pages/overlay/overlay",
         "pages/form/form",
-        "pages/asset/asset"
+        "pages/asset/asset",
+        "pages/component/component"
     ],
     "window": {
         "backgroundTextStyle": "light",

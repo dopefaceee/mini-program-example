@@ -39,3 +39,16 @@
 .input:active {
   border-color: #00AB4E; /* Change border color when clicked */
 }
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure the loading mask is above other elements */
+}

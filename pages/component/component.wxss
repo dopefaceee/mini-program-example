@@ -54,7 +54,6 @@
 }
 
 .child-up {
-  background-color: aqua;
   height: 100%;
 }
 
@@ -71,13 +70,33 @@
   align-items: center;
 }
 
-.child2 {
-  padding-right: 20rpx;
+.label-input-container {
+  display: flex; /* Use flexbox to arrange children in a row */
+  align-items: stretch; /* Make all flex items stretch to the same height */
+}
+
+.label {
+  color: #58585B;
+  background-color: #EEEEEF; /* Set background color for the label */
+  padding: 20rpx; /* Add padding to the label for better visibility */
+  border-top-left-radius: 6rpx; /* Set border-radius for the top-left corner */
+  border-bottom-left-radius: 6rpx; /* Set border-radius for the bottom-left corner */
+  border: 1rpx solid var(--neutrals-black-20, #EEEEEF);
+}
+
+.input {
+  background-color: #fff; /* Set background color for the input */
+  padding: 20rpx; /* Add padding to the input for better visibility */
+  /* border-radius: 6rpx; */
+  border-top-right-radius: 6rpx;
+  border-bottom-right-radius: 6rpx;
+  border: 1rpx solid var(--neutrals-black-20, #EEEEEF);
+  cursor: pointer; /* Change cursor to indicate clickable */
 }
 
 .label:active,
 .input:active {
-  border-color: #00AB4E; /* Change border color when clicked */
+border-color: #00AB4E; /* Change border color when clicked */
 }
 
 .loading-container {

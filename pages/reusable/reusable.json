@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "bri-input": "../../components/bri-button/bri-button"
+    }
+}

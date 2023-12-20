@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+}
+
+.block {
+  /*background: #fff;*/
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block--top,
+.block--bottom {
+  width: 100vw;
+  height: 240px;
+}
+
+.block--left,
+.block--right {
+  width: 280px;
+  height: 100vh;
+}
+
+.block--center {
+  width: 240px;
+  height: 240px;
+}
+
+.wrapper + .wrapper {
+  margin-top: 32rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20rpx;
+}
+
+.txt {
+  font-size: 32rpx;
+}
+
+.btn {
+  height: 80rpx;
+  align-items: center;
+  display: flex;
+}
+
+.child-up {
+  height: 100%;
+}
+
+.child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+
+.child1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.label-input-container {
+  display: flex; /* Use flexbox to arrange children in a row */
+  align-items: stretch; /* Make all flex items stretch to the same height */
+}
+
+.label {
+  color: #58585B;
+  background-color: #EEEEEF; /* Set background color for the label */
+  padding: 20rpx; /* Add padding to the label for better visibility */
+  border-top-left-radius: 6rpx; /* Set border-radius for the top-left corner */
+  border-bottom-left-radius: 6rpx; /* Set border-radius for the bottom-left corner */
+  border: 1rpx solid var(--neutrals-black-20, #EEEEEF);
+}
+
+.input {
+  background-color: #fff; /* Set background color for the input */
+  padding: 20rpx; /* Add padding to the input for better visibility */
+  /* border-radius: 6rpx; */
+  border-top-right-radius: 6rpx;
+  border-bottom-right-radius: 6rpx;
+  border: 1rpx solid var(--neutrals-black-20, #EEEEEF);
+  cursor: pointer; /* Change cursor to indicate clickable */
+}
+
+.label:active,
+.input:active {
+border-color: #00AB4E; /* Change border color when clicked */
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure the loading mask is above other elements */
+}

@@ -1,0 +1,45 @@
+<view class="container">
+<view class="custom-theme">
+    <t-input label="Rupiah" placeholder="Masukkan harga" maxlength="{{10}}" />
+</view>
+<t-button theme="primary" size="large">Input</t-button>
+<view class="label-input-container">
+    <label class="label">Input Label</label>
+    <input class="input" placeholder="Type something..." />
+</view>
+ <button type="primary" bindtap="showLoading">Show Loading</button>
+<view class="loading-container" hidden="{{!isLoading}}">
+  <image src="/images/giphy.gif" mode="aspectFit"></image>
+</view>
+
+<t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="{{cur.value || 'top'}}">
+  <view class="block block--{{cur.value}}">
+    <view class="content">
+      <view class="child-up">
+        Test
+      </view>
+      <view class="child">
+        <view class="child1">
+          <text class="txt">Total: Rp90.000</text>
+        </view>
+        <view class="child2">
+          <button class="btn" type="primary">Bayar</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</t-popup>
+
+<t-button
+  wx:for="{{position}}"
+  wx:key="index"
+  block
+  size="large"
+  variant="outline"
+  theme="primary"
+  bind:tap="handlePopup"
+  data-item="{{item}}"
+  t-class="wrapper"
+  >{{item.text}}</t-button
+>
+</view>

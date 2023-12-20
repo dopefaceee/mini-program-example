@@ -43,4 +43,20 @@ Page({
       },
     });
   },
+  toComponent: function (event) {
+    wx.navigateTo({
+      url: "/pages/component/component",
+      success: function (res) {
+        console.log("to component");
+      },
+    });
+  },
+  toReusable: function (event) {
+    wx.navigateTo({
+      url: "/pages/reusable/reusable",
+      success: function (res) {
+        console.log("to reusable");
+      },
+    });
+  },
 });

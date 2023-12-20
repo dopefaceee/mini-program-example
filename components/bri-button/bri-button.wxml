@@ -1,0 +1,4 @@
+<view class="wrapper">
+    <view>This indicates the internal node of the component {{value1}}</view>
+    <slot></slot>
+</view>
